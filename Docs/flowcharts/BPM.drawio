@@ -1,0 +1,109 @@
+<mxfile host="Electron" modified="2026-01-04T21:44:42.436Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Esk5ZEK9Ry-4XtiBdA2T" version="22.1.16" type="device">
+  <diagram name="Page-1" id="h6xYjqeTE6botL0LlbfT">
+    <mxGraphModel dx="1183" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-3" target="1NLqpprwk8tSJUXd_Axv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-3" value="Store last beat time" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="232" y="30" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-4" target="1NLqpprwk8tSJUXd_Axv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-4" value="Set threshold = 0..8 x max peak" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="202" y="70" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-9" target="1NLqpprwk8tSJUXd_Axv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-13" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1NLqpprwk8tSJUXd_Axv-12">
+          <mxGeometry x="-0.1986" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-9" target="1NLqpprwk8tSJUXd_Axv-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="140" />
+              <mxPoint x="140" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-15" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1NLqpprwk8tSJUXd_Axv-14">
+          <mxGeometry x="-0.2187" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-9" value="filtered_val&amp;nbsp; &amp;gt; peak_threshold" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="120" width="208" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-11" target="1NLqpprwk8tSJUXd_Axv-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-21" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1NLqpprwk8tSJUXd_Axv-17">
+          <mxGeometry x="0.2743" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-11" value="Store current time" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="232" y="200" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.017;exitY=0.504;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-19" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1NLqpprwk8tSJUXd_Axv-18">
+          <mxGeometry x="0.0914" y="-1" relative="1" as="geometry">
+            <mxPoint y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-16" target="1NLqpprwk8tSJUXd_Axv-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-16" value="current_time - last_beat_time &amp;gt; min_inter_beat_interval" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="164" y="250" width="256" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-22" target="1NLqpprwk8tSJUXd_Axv-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-22" value="rr_interval_raw = current_time - last_beat_time" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="320" width="278" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-24" target="1NLqpprwk8tSJUXd_Axv-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-24" value="Right value in RR history buffer" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="360" width="278" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-26" target="1NLqpprwk8tSJUXd_Axv-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-26" value="Calc RR average (EMA filter)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="206.5" y="404" width="169" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-28" target="1NLqpprwk8tSJUXd_Axv-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-28" value="Calc BPM&lt;br&gt;60000.0f / rr_interval_raw" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="191.5" y="450" width="199" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1NLqpprwk8tSJUXd_Axv-30" target="1NLqpprwk8tSJUXd_Axv-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-30" value="Calc BPM average (EMA filter)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="201.5" y="500" width="179" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="1NLqpprwk8tSJUXd_Axv-32" value="last_beat_time = current_time" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="177" y="550" width="229" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
