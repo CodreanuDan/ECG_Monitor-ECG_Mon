@@ -1,0 +1,55 @@
+Prezentare condensată – 5 minute
+
+Slide 1 – Introducere
+
+„Lucrarea prezintă proiectarea și simularea unui dispozitiv de monitorizare a semnalului ECG, cu accent pe filtrarea hibridă, atât hardware, cât și software, și pe extragerea parametrilor relevanți ai semnalului cardiac.”
+Imagine: Inimă + unda PQRST
+
+Slide 2 – Context & Stadiul actual
+
+„În prezent, există o gamă largă de dispozitive ECG, de la sistemele clasice cu 12 derivații până la soluții portabile, pe care se pune tot mai mult accent.
+Proiectarea acestor sisteme trebuie să țină cont de interferențele rețelei electrice (50 Hz), care sunt reduse de raportul de respingere a modului comun (CMRR) al amplificatorului, și de artefactele interne cauzate de activitatea musculară sau respirație (EMG și baseline wander).”
+Imagine: Triunghi Eindhoven + semnal filtrat cu zgomot
+
+Slide 3 – Obiective
+
+„Obiectivele lucrării sunt: proiectarea unui dispozitiv ECG pe baza unor componente low-cost și obținerea unui semnal cât mai fidel pentru prelucrare, astfel încât să se determine parametrii cardiaci esențiali, precum frecvența cardiacă (BPM), lățimea complexului QRS și variabilitatea ritmului cardiac (HRV).”
+Imagine: Schema bloc: Electrozi → Amplificare + RLD → Filtrare → Sumator → Corecție offset → Microcontroler → LCD
+
+Slide 4 – Contribuții personale & Implementare
+
+„Lanțul de achiziție include: model pacient simulat (ECG + zgomot de rețea), amplificator de instrumentație (AD620) + RLD, filtrare activă, amplificator sumator și corecție de offset pentru ADC, microcontroler și afișare LCD.
+Filtrele active permit amplificarea semnalului și eliminarea precisă a zgomotului, cu menținerea stabilității semnalului.
+În software, semnalul este filtrat suplimentar cu trece-sus pentru baseline wander, iar pentru detectarea pulsului și undei R s-au aplicat filtre digitale EMA și derivata de ordin 1.
+Rata de eșantionare este de 1 kHz, conform criteriului Nyquist.”
+Imagine: Schema Proteus + blocuri filtrare
+
+Slide 5 – Metodologie & Validare
+
+„Simulările au fost realizate în Proteus, cu zgomot de nivel redus și ridicat.
+Am comparat parametrii BPM, QRS și intervalele RR între cele două seturi de date.
+În imagine se observă semnalul filtrat în ambele scenarii, demonstrând performanța sistemului.”
+Imagine: Semnal ECG cu zgomot ridicat vs. redus
+
+Slide 6 – Rezultate
+
+„Parametrii BPM și QRS au rămas stabili în ambele scenarii, conform vizualizărilor pe osciloscop.
+Parametrii HRV (SDNN, RMSSD) au prezentat variații mai mari în prezența zgomotului ridicat, reflectând sensibilitatea acestor indicatori la perturbări.”
+Imagine: LCD cu parametri + zoom osciloscop
+
+Slide 7 – Concluzii & Dezvoltări Viitoare
+
+„Filtrarea hibridă a permis obținerea unui semnal stabil și robust chiar și în prezența zgomotului extern și a artefactelor biologice.
+Sistemul low-cost a demonstrat performanță satisfăcătoare în detectarea QRS, calculul BPM și analiza HRV.
+Pentru dezvoltări viitoare se propune testarea pe pacienți reali, optimizarea filtrelor și extinderea funcționalităților pentru sisteme portabile integrate.”
+Imagine: Osciloscop cu semnal zgomot ridicat și redus + icon wearable
+
+💡 Sfaturi finale pentru prezentare live:
+
+Citește frazele calm și lent, pauze după termeni tehnici.
+
+Accent pe cuvintele cheie: ECG, filtrare hibridă, BPM, QRS, HRV, CMRR, EMG, baseline wander.
+
+Gesticulează ușor spre imagini, ca profesorul să vadă că știi ce arată fiecare slide.
+
+Dacă te întreabă „de ce”, ai deja explicații: filtre active → zgomot + amplificare, baseline → trece-sus, rata eșantionare → Nyquist.

@@ -1,0 +1,38 @@
+Lucrarea prezintă proiectarea și simularea unui dispozitiv de monitorizare a semnalului ECG, cu accent pe filtrarea hibridă, atât hardware, cât și software, și pe extragerea parametrilor relevanți ai semnalului cardiac.
+
+În prezent, există o gamă largă de dispozitive ECG, de la sistemele clasice cu 12 derivații până la soluții portabile, pe care se pune tot mai mult accent. Totuși, proiectarea acestor sisteme trebuie să țină cont de interferențele rețelei electrice (50 Hz), care sunt reduse de raportul de respingere a modului comun (CMRR) al amplificatorului, și de artefactele interne cauzate de activitatea musculară sau de respirație (EMG și baseline wander).
+
+Obiectivele lucrării sunt: proiectarea unui dispozitiv ECG pe baza unor componente low-cost și obținerea unui semnal cât mai fidel pentru prelucrare, astfel încât să se determine parametrii cardiaci esențiali, precum frecvența cardiacă (BPM), lățimea complexului QRS și variabilitatea ritmului cardiac (HRV).
+
+„În această secțiune voi prezenta lanțul de achiziție și prelucrare a semnalului ECG, problemele întâlnite și modul în care acestea au fost corectate, precum și justificările alegerilor hardware și software.
+
+„Lanțul este compus din:
+
+Model pacient simulat prin două surse de semnal – una pentru ECG și alta pentru interferențele rețelei electrice (50 Hz).
+
+Amplificator de instrumentație (AD620) și circuit RLD pentru reducerea zgomotului de mod comun.
+
+Etaj de filtrare pentru izolarea benzii utile a semnalului ECG.
+
+Amplificator sumator și corecție de offset pentru centrul semnalului în domeniul ADC.
+
+Microcontroler pentru procesare și afișare pe ecran LCD.”
+
+Filtrele active au fost alese deoarece permit atât filtrarea precisă a benzii utile a semnalului ECG, cât și amplificarea acestuia, asigurând astfel un raport semnal/zgomot ridicat. De asemenea, ele oferă flexibilitate în reglarea frecvențelor de tăiere și mențin stabilitatea semnalului, cu impedanță de intrare mare și ieșire mică, evitând distorsiunile. 
+
+În software, semnalul a fost prelucrat suplimentar cu un filtru trece-sus pentru eliminarea derivației liniei de bază, iar pentru detectarea pulsului și a undei R s-au aplicat filtre digitale EMA și derivata de ordin 1.
+
+Am folosit o rată de eșantionare de 1 kHz (1 ms) pentru a respecta criteriul Nyquist, asigurând cel puțin de două ori mai mult decât frecvența maximă a semnalului ECG.
+
+Parametrii obținuți sunt afișați în timp real pe ecranul LCD pentru monitorizare rapidă și intuitivă.
+
+Pentru testarea și validarea circuitului, am realizat simulări complete în Proteus, aplicând zgomot de nivel redus și ridicat pentru a analiza comportamentul semnalului.
+Am comparat parametrii cardiaci BPM, lățimea complexului QRS și intervalele RR între cele două seturi de date.
+În imagine puteți observa semnalul filtrat atât în cazul zgomotului ridicat, cât și al zgomotului redus, pentru a evidenția performanța sistemului.
+
+Din rezultatele obținute, putem observa că în ambele scenarii de test, parametrii BPM și lățimea complexului QRS au rămas stabili, conform vizualizărilor pe osciloscop.
+Parametrii HRV, cum ar fi SDNN și RMSSD, au prezentat variații mai mari în prezența zgomotului ridicat, ceea ce reflectă sensibilitatea acestor indicatori la perturbările semnalului.
+
+„În concluzie, filtrarea hibridă aplicată în acest proiect a permis obținerea unui semnal ECG stabil și robust, chiar și în prezența zgomotului extern și a artefactelor biologice.
+Sistemul, bazat pe componente low-cost, a demonstrat o performanță satisfăcătoare în detecția complexului QRS, calculul BPM și analiza HRV.
+Pentru dezvoltări viitoare, este posibilă implementarea hardware pe pacienți reali, optimizarea filtrelor pentru performanță sporită și testarea în condiții variate de zgomot, precum și extinderea funcționalităților pentru sisteme portabile integrate
