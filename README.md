@@ -60,6 +60,49 @@ The goal of this project is to design and simulate  **ECG monitoring system** us
 ![Arduino ECG Software Flow](Docs/img/SW_Main_Chart.png)  
 *(Simplified software flowchart)*
 
+### 🧠 Algorithms & Signal Processing Logic
+Detailed breakdown of the software logic used for R-peak detection and clinical metrics calculation.
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/img/BPM.png" width="400"/><br/>
+    </td>
+    <td align="center">
+      <img src="Docs/img/ECGMon_Flowchart.png" width="400"/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>BPM Logic</b><br>(Real-time pulse calculation and RR intervals)
+    </td>
+    <td align="center">
+      <b>Main Flowchart</b><br>(General system execution and state machine)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/img/Peak_Detection.png" width="400"/><br/>
+    </td>
+    <td align="center">
+      <img src="Docs/img/QRS_Counter.png" width="400"/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Peak Detection</b><br>(1st Derivative & Adaptive Thresholding)
+    </td>
+    <td align="center">
+      <b>QRS Analysis</b><br>(Time-domain measurement of the ventricular complex)
+    </td>
+  </tr>
+</table>
+</div>
+
+> [!NOTE]  
+> The algorithms are optimized for the **ATmega328P** single-core architecture, utilizing a 1kHz Timer Interrupt to ensure sampling precision while maintaining a 10ms UI refresh rate.
+
 ---
 
 ## 4. Demo / Results
