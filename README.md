@@ -67,19 +67,19 @@ Detailed breakdown of the software logic used for R-peak detection and clinical 
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/img/Peak_Detection.png" width="500"/><br/>
+      <img src="Docs/img/Peak_Detection.png" width="300"/><br/>
       <b>Peak Detection</b><br>(1st Derivative & Adaptive Thresholding logic)
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Docs/img/BPM.png" width="500"/><br/>
+      <img src="Docs/img/BPM.png" width="300"/><br/>
       <b>BPM Logic</b><br>(Real-time pulse calculation and RR intervals)
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Docs/img/QRS_Counter.png" width="500"/><br/>
+      <img src="Docs/img/QRS_Counter.png" width="300"/><br/>
       <b>QRS Analysis</b><br>(Time-domain measurement of the ventricular complex)
     </td>
   </tr>
