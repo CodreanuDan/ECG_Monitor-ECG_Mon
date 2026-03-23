@@ -64,23 +64,26 @@ The goal of this project is to design and simulate  **ECG monitoring system** us
 Detailed breakdown of the software logic used for R-peak detection and clinical metrics calculation.
 
 <div align="center">
-
-  #### 1. Peak Detection
-  <img src="Docs/img/Peak_Detection.png" width="600"/>  
-  *1st Derivative & Adaptive Thresholding logic*
-
-  <br/>
-
-  #### 2. BPM Logic
-  <img src="Docs/img/BPM.png" width="600"/>  
-  *Real-time pulse calculation and RR intervals*
-
-  <br/>
-
-  #### 3. QRS Analysis
-  <img src="Docs/img/QRS_Counter.png" width="600"/>  
-  *Time-domain measurement of the ventricular complex*
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/img/Peak_Detection.png" width="500"/><br/>
+      <b>Peak Detection</b><br>(1st Derivative & Adaptive Thresholding logic)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/img/BPM.png" width="500"/><br/>
+      <b>BPM Logic</b><br>(Real-time pulse calculation and RR intervals)
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/img/QRS_Counter.png" width="500"/><br/>
+      <b>QRS Analysis</b><br>(Time-domain measurement of the ventricular complex)
+    </td>
+  </tr>
+</table>
 </div>
 
 > [!NOTE]  
